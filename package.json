@@ -1,0 +1,32 @@
+{
+  "name": "esbuild-react-app-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate React App with esbuild configured for dev server + environment variable injection",
+  "author": "jaredmcgrath",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 14.17.5",
+    "npm": ">= 7.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node ./esbuild/build.js",
+    "start": "node ./esbuild/serve.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.17.0",
+    "dotenv": "^16.0.0",
+    "envsub": "^4.0.7",
+    "esbuild": "^0.14.29",
+    "esbuild-plugin-manifest": "^0.5.0",
+    "esbuild-plugin-svgr": "^1.0.0",
+    "typescript": "^4.6.3",
+    "vite-esbuild-typescript-checker": "^0.0.1-alpha.9"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
